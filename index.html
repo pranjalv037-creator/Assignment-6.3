@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Layout Fixing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><h1>CSS Overflow and Layout Fixing</h1>
+
+<section class="container">
+    <h2>1. Overflow: Visible</h2>
+    <div class="box visible">
+        This is a long paragraph demonstrating visible overflow.
+        The content extends outside the fixed-height container.
+        Additional text makes the overflow easy to observe.
+        CSS controls how this extra content appears.
+    </div>
+</section>
+
+<section class="container">
+    <h2>2. Overflow: Hidden</h2>
+    <div class="box hidden">
+        This is a long paragraph demonstrating hidden overflow.
+        The content extends beyond the container, but the extra
+        portion is clipped and cannot be seen.
+        More text is added to test the overflow property.
+    </div>
+</section>
+
+<section class="container">
+    <h2>3. Overflow: Auto</h2>
+    <div class="box auto">
+        This is a scrollable content box using overflow auto.
+        When the content exceeds the fixed height, a scrollbar
+        appears automatically. Scroll to read the remaining text.
+        This additional content makes the box overflow.
+        The container remains at a fixed height.
+    </div>
+</section>
+
+<section class="container">
+    <h2>4. Overflow: Scroll</h2>
+    <div class="box scroll">
+        This box uses overflow scroll.
+        The content is longer than the available height.
+        Scroll to view the remaining text.
+        Overflow scroll allows the user to access extra content.
+        This is another line of text.
+        This is another line of text.
+    </div>
+</section>
+
+<section class="container">
+    <h2>5. Fixed Layout</h2>
+    <div class="fixed-layout">
+        <h3>Responsive Content Box</h3>
+        <p>
+            This layout uses max-width and overflow-wrap to prevent
+            long content from extending beyond the container.
+            The box adjusts to smaller screens.
+        </p>
+        <p class="long-text">
+            https://example.com/this-is-a-very-long-url-that-demonstrates-how-overflow-can-be-fixed-with-css
+        </p>
+    </div>
+</section>
+
+</body>
+  </html>
